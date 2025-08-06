@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+.loader {
+  width: 4rem;
+  height: 4rem;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #CCCCD9;
+  border-top-color: #7E7CA6;
+  border-radius: 9999px;
+  animation: spin-reverse 5s linear infinite;
+}
+
+/* You can override or add animations here */
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
