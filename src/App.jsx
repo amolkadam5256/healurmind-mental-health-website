@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Loader from './components/Loader';
 
 const PageWrapper = ({ children }) => {
@@ -55,6 +56,7 @@ const App = () => {
           <main className="min-h-screen pt-16 bg-white">
             <AnimatedRoutes />
           </main>
+          <Footer/>
         </>
       )}
     </Router>
