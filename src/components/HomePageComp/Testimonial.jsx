@@ -23,7 +23,7 @@ const testimonials = [
     {
         name: "Tariq F.",
         text: "HealUrMind fortified our marriage’s foundation. Practical wisdom navigated early hurdles, setting a course for lasting happiness.",
-    },  
+    },
     {
         name: "Amina H.",
         text: "Depression’s grip weakened, thanks to HealUrMind’s compassionate guidance. Managed emotions, renewed purpose. Life transformed.",
@@ -84,9 +84,6 @@ const Testimonial = () => {
                             </svg>
                         </button>
                     </div>
-
-
-
 
 
                 </div>
