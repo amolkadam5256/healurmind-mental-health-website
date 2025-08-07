@@ -19,7 +19,23 @@ import Square3 from './Square3.jpg';
 
 import favicon from './favicon.ico';
 
+import homePng from './homePng.png';
+
+import hands_shake from './hands_shake.jpg';
+import hands_shake2 from './hands_shake2.jpg';
+import homePng1 from './homePng1.png';
+import mental from './mental.jpg';
+import yoga from './yoga.jpg';
+
+
+
 const images = {
+  hands_shake,
+  hands_shake2,
+  homePng1,
+  mental,
+  yoga,
+  homePng,
   favicon,
   bg1,
   bg2,

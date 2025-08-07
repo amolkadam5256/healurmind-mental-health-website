@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
-
 .loader {
   width: 4rem;
   height: 4rem;
   border-width: 4px;
   border-style: solid;
-  border-color: #CCCCD9;
-  border-top-color: #7E7CA6;
+  border-color: #ccccd9;
+  border-top-color: #7e7ca6;
   border-radius: 9999px;
   animation: spin-reverse 5s linear infinite;
 }
@@ -20,4 +19,53 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+/* Herosection */
+
+.hero-bg-slide {
+  animation: slideBackground 24s infinite ease-in-out;
+  background-image: url("https://source.unsplash.com/1600x900/?technology,code");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@keyframes slideBackground {
+  0% {
+    background-image: url("./assets/Images/bg1.jpg");
+  }
+  25% {
+    background-image: url("./assets/Images/bg2.jpg");
+  }
+  50% {
+    background-image: url("./assets/Images/bg3.jpg");
+  }
+  75% {
+    background-image: url("./assets/Images/bg4.jpg");
+  }
+  100% {
+    background-image: url("./assets/Images/bg1.jpg");
+  }
+}
+
+/* testimonial */
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "" !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "" !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin-top: 10px !important;
 }
