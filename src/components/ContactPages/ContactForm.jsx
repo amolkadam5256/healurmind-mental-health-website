@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
     RiLinkedinBoxFill,
@@ -10,6 +10,34 @@ import {
 } from 'react-icons/ri';
 
 const ContactForm = () => {
+
+    const [status, setStatus] = useState(null);
+    const [submitting, setSubmitting] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSubmitting(true);
+        setStatus(null);
+
+        const form = e.target;
+        const data = new FormData(form);
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: data,
+        });
+
+        const result = await response.json();
+        if (result.success) {
+            setStatus('Message sent successfully!');
+            form.reset();
+        } else {
+            setStatus('Failed to send message. Please try again.');
+        }
+        setSubmitting(false);
+    };
+
+    
     return (
         <section className="bg-white py-8 px-6 md:px-16">
             <div className="max-w-4xl mx-auto shadow-lg rounded-xl overflow-hidden border border-[#CCCCD9]">
@@ -46,7 +74,7 @@ const ContactForm = () => {
                                 >
                                     <RiLinkedinBoxFill />
                                 </a>
-                               
+
                                 <a
                                     href="https://twitter.com/amolkadam1274"
                                     target="_blank"
@@ -86,11 +114,18 @@ const ContactForm = () => {
 
                     {/* Right Form */}
                     <div className="bg-white md:w-1/2 p-8">
-                        <form className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6">
+                            {/* Web3Forms Access Key */}
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                            {/* Optional: Redirect URL or from_name */}
+                            <input type="hidden" name="from_name" value="Website Contact Form" />
+
                             <div>
                                 <label className="block text-[#3B3973] font-semibold mb-1">Your Name</label>
                                 <input
                                     type="text"
+                                    name="name"
+                                    required
                                     className="w-full px-4 py-3 border border-[#CCCCD9] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B3973]"
                                     placeholder="John Doe"
                                 />
@@ -99,6 +134,8 @@ const ContactForm = () => {
                                 <label className="block text-[#3B3973] font-semibold mb-1">Your Email</label>
                                 <input
                                     type="email"
+                                    name="email"
+                                    required
                                     className="w-full px-4 py-3 border border-[#CCCCD9] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B3973]"
                                     placeholder="you@example.com"
                                 />
@@ -106,6 +143,8 @@ const ContactForm = () => {
                             <div>
                                 <label className="block text-[#3B3973] font-semibold mb-1">Message</label>
                                 <textarea
+                                    name="message"
+                                    required
                                     className="w-full px-4 py-3 border border-[#CCCCD9] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B3973]"
                                     rows="4"
                                     placeholder="Write your message..."
@@ -113,10 +152,21 @@ const ContactForm = () => {
                             </div>
                             <button
                                 type="submit"
+                                disabled={submitting}
                                 className="w-full bg-[#3B3973] text-white py-3 rounded-md hover:bg-[#2F2D73] transition-all duration-300"
                             >
-                                Send Message
+                                {submitting ? 'Sending...' : 'Send Message'}
                             </button>
+
+                            {/* Alert Message */}
+                            {status && (
+                                <div
+                                    className={`text-sm text-center font-medium mt-2 ${status.includes('successfully') ? 'text-green-600' : 'text-red-600'
+                                        }`}
+                                >
+                                    {status}
+                                </div>
+                            )}
                         </form>
                     </div>
                 </div>
