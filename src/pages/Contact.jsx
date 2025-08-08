@@ -6,7 +6,7 @@ import ContactForm from '../components/ContactPages/ContactForm';
 const Contact = () => {
   return (
     <>
-      <main className="overflow-x-hidden">
+      <main className="">
         <ContactForm />
         <HeroServicesSection />
         <AboutBannerSection />

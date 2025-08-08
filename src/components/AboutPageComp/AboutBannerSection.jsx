@@ -12,7 +12,7 @@ const AboutBannerSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-white dark:bg-gray-900 overflow-hidden h-[60vh]">
+    <section className="relative bg-white dark:bg-gray-900  h-[60vh]">
       {/* Background Image Slide */}
       <div className="absolute inset-0 z-0 bg-cover bg-center about-hero-bg-slide animate-slide"></div>
 

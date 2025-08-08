@@ -14,7 +14,7 @@ const HeroServicesSection = () => {
     }, []);
 
     return (
-        <section className="bg-white py-20" id="hero-services">
+        <section className="bg-white py-20" id="hero-services" >
             <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
                 {/* Left Image */}
                 <div data-aos="fade-right" data-aos-delay="300">
