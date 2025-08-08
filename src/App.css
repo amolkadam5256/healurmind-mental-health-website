@@ -69,3 +69,32 @@
   height: 40px !important;
   margin-top: 10px !important;
 }
+
+/* about page  */
+
+.about-hero-bg-slide {
+  animation: slideBackground 24s infinite ease-in-out;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@keyframes slideBackground {
+  0% {
+    background-image: url("./assets/Images/bg1.jpg");
+  }
+  25% {
+    background-image: url("./assets/Images/bg2.jpg");
+  }
+  50% {
+    background-image: url("./assets/Images/bg3.jpg");
+  }
+  75% {
+    background-image: url("./assets/Images/bg4.jpg");
+  }
+  100% {
+    background-image: url("./assets/Images/bg1.jpg");
+  }
+}

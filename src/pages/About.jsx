@@ -1,10 +1,15 @@
 import React from 'react'
 
+import AboutHeroSection from '../components/AboutPageComp/AboutHeroSection';
+import AboutBannerSection from '../components/AboutPageComp/AboutBannerSection';
 const About = () => {
   return (
-    <div>Ab
-      out</div>
+    <>
+      <main className="min-h-screen overflow-x-hidden">
+        <AboutHeroSection />
+        <AboutBannerSection />
+      </main>
+    </>
   )
 }
-
 export default About
