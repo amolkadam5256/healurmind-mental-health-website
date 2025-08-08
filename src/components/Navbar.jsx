@@ -43,23 +43,25 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `relative transition duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2F2D73] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100  ${
-                    isActive
-                      ? 'text-[#2F2D73] font-semibold after:scale-x-100 '
-                      : 'text-[#0D0D0D] hover:text-[#3B3973]'
+                  `relative transition duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2F2D73] after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100  ${isActive
+                    ? 'text-[#2F2D73] font-semibold after:scale-x-100 '
+                    : 'text-[#0D0D0D] hover:text-[#3B3973]'
                   }`
                 }
               >
                 {link.name}
               </NavLink>
             ))}
-            <motion.button
-              whileTap={{ scale: 0.95 }}
-              whileHover={{ scale: 1.05 }}
-              className="bg-[#2F2D73] text-white px-5 py-2 rounded-full hover:bg-[#3B3973] transition duration-300 shadow"
-            >
-              Request A Call
-            </motion.button>
+            <Link to="/contact">
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.05 }}
+                className="bg-[#2F2D73] text-white px-5 py-2 rounded-full hover:bg-[#3B3973] transition duration-300 shadow"
+              >
+                Request A Call
+              </motion.button>
+            </Link>
+
           </div>
 
           {/* Mobile Toggle Button */}
@@ -115,23 +117,25 @@ const Navbar = () => {
                   to={link.path}
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
-                    `block text-[17px] font-medium px-3 py-2 rounded-md transition-all duration-300 ${
-                      isActive
-                        ? 'text-[#2F2D73] bg-[#CCCCD9]/30'
-                        : 'text-[#0D0D0D] hover:text-[#3B3973]'
+                    `block text-[17px] font-medium px-3 py-2 rounded-md transition-all duration-300 ${isActive
+                      ? 'text-[#2F2D73] bg-[#CCCCD9]/30'
+                      : 'text-[#0D0D0D] hover:text-[#3B3973]'
                     }`
                   }
                 >
                   {link.name}
                 </NavLink>
               ))}
-              <motion.button
-                whileTap={{ scale: 0.95 }}
-                whileHover={{ scale: 1.03 }}
-                className="w-full bg-[#2F2D73] text-white px-4 py-2 rounded-full hover:bg-[#3B3973] transition duration-300"
-              >
-                Request A Call
-              </motion.button>
+              <Link to="/contact">
+                <motion.button
+                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.03 }}
+                  className="w-full bg-[#2F2D73] text-white px-4 py-2 rounded-full hover:bg-[#3B3973] transition duration-300"
+                >
+                  Request A Call
+                </motion.button>
+              </Link>
+
             </div>
           </motion.div>
         )}
