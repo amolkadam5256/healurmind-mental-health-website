@@ -37,10 +37,10 @@ const ContactForm = () => {
         setSubmitting(false);
     };
 
-
+    
     return (
-        <section className="bg-white py-8 px-6 md:px-16 ">
-            <div className="max-w-4xl mx-auto shadow-lg rounded-xl overflow-hidden border border-[#CCCCD9]">
+        <section className="bg-white py-8 px-6 md:px-16">
+            <div className="max-w-4xl mx-auto shadow-lg rounded-xl border border-[#CCCCD9]">
                 <div className="md:flex">
                     {/* Left Info */}
                     <div className="bg-[#2F2D73] text-white md:w-1/2 w-full p-10 space-y-6 flex flex-col justify-between">
