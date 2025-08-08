@@ -9,9 +9,10 @@ import logo from './logo.png';
 import logo1 from './logo1.png';
 
 import MobileView1 from './MobileView1.jpg';
-import MobileView2 from './MobileView2.jpg';
+import MobileView2 from './MobileView2.png';
 import MobileView3 from './MobileView3.jpg';
 import MobileView4 from './MobileView4.jpg';
+import MobileView5 from './MobileView5.jpg';
 
 import Square1 from './Square1.jpg';
 import Square2 from './Square2.jpg';
@@ -47,6 +48,7 @@ const images = {
   MobileView2,
   MobileView3,
   MobileView4,
+  MobileView5,
   Square1,
   Square2,
   Square3,

@@ -75,7 +75,7 @@ const AboutHeroSection = () => {
                         </div>
                         <img
                             className="sm:ml-0 ml-auto rounded-xl object-cover shadow-lg hover:scale-105 transition-transform duration-500"
-                            src={images.MobileView2}
+                            src={images.MobileView5}
                             alt="Mindfulness practice session"
                         />
                     </div>
