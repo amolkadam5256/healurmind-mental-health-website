@@ -9,7 +9,7 @@ import AboutBannerSection from '../components/AboutPageComp/AboutBannerSection';
 const Home = () => {
   return (
     <>
-      <main className="overflow-x-hidden">
+      <main className="w-full">
         <HeroSection />
         <AboutHomeSection />
         <GallerySection />

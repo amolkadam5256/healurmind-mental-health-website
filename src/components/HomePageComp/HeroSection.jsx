@@ -13,7 +13,7 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <section className="relative bg-white dark:bg-gray-900 overflow-hidden">
+        <section className="relative bg-white dark:bg-gray-900">
             {/* Background image slideshow container */}
             <div className="absolute inset-0 z-0 bg-cover bg-center hero-bg-slide animate-slide"></div>
 

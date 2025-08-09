@@ -53,7 +53,7 @@ const App = () => {
       ) : (
         <>
           <Navbar />
-          <main className="pt-16 overflow-x-hidden">
+          <main className="pt-16 w-full">
             <AnimatedRoutes />
           </main>
           <Footer/>

@@ -8,7 +8,7 @@ import ServiceSection from '../components/ServicesPageComp/ServiceSection';
 const Services = () => {
   return (
     <>
-      <main className="overflow-x-hidden">
+      <main className="w-full">
         <HeroServicesSection />
         <ServiceSection/>
         <AboutBannerSection />

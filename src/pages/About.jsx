@@ -6,7 +6,7 @@ import AboutDes from '../components/AboutPageComp/AboutDes';
 const About = () => {
   return (
     <>
-      <main className="overflow-x-hidden">
+      <main className="w-full">
         <AboutHeroSection />
         <AboutDes/>
         <AboutBannerSection />

@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactPages/ContactForm';
 const Contact = () => {
   return (
     <>
-      <main className="overflow-x-hidden">
+      <main className="w-full">
         <ContactForm />
 
       </main>
