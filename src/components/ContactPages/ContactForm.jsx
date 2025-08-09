@@ -53,11 +53,11 @@ const ContactForm = () => {
                             <div className="space-y-4">
                                 <div>
                                     <p className="font-medium">Email</p>
-                                    <p className="text-[#d8d8e0]">amolkadam1274@gmail.com</p>
+                                    <p className="text-[#d8d8e0]">info@healurmind.com</p>
                                 </div>
                                 <div>
                                     <p className="font-medium">Location</p>
-                                    <p className="text-[#d8d8e0]">Pune, Maharashtra, India</p>
+                                    <p className="text-[#d8d8e0]">Al owais building, Port Saeed, Dubai</p>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ const ContactForm = () => {
                     <div className="bg-white md:w-1/2 p-8">
                         <form onSubmit={handleSubmit} className="space-y-6">
                             {/* Web3Forms Access Key */}
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                            <input type="hidden" name="access_key" value="531a6639-438d-4d33-981c-47914c79c7f1" />
                             {/* Optional: Redirect URL or from_name */}
                             <input type="hidden" name="from_name" value="Website Contact Form" />
 

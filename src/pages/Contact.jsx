@@ -6,7 +6,6 @@ const Contact = () => {
     <>
       <main className="w-full">
         <ContactForm />
-
       </main>
     </>
   )

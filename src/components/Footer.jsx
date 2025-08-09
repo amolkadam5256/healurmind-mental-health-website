@@ -34,8 +34,8 @@ const Footer = () => {
         {/* Contact */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact</h3>
-          <p className="text-sm text-[#CCCCD9]">12 Avenue, New York, NY 10160</p>
-          <p className="text-sm text-[#CCCCD9] mt-2">Phone: +1 910-626-85255</p>
+          <p className="text-sm text-[#CCCCD9]">Al owais building, Port Saeed, Dubai</p>
+          <p className="text-sm text-[#CCCCD9] mt-2">Phone: +971 5057 61914</p>
           <p className="text-sm text-[#CCCCD9] mt-1">
             Email:{' '}
             <a href="mailto:contact@nature.com" className="text-[#7E7CA6] hover:underline">

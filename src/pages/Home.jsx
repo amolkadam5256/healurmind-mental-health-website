@@ -15,7 +15,7 @@ const Home = () => {
         <GallerySection />
         <ServicesSection />
         <Testimonial />
-        <AboutBannerSection/>
+        <AboutBannerSection />
       </main>
     </>
   )
