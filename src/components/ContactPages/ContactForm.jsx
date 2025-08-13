@@ -37,7 +37,7 @@ const ContactForm = () => {
         setSubmitting(false);
     };
 
-    
+
     return (
         <section className="bg-white py-8 px-6 md:px-16">
             <div className="max-w-4xl mx-auto shadow-lg rounded-xl border border-[#CCCCD9]">
@@ -63,14 +63,14 @@ const ContactForm = () => {
                         </div>
 
                         {/* Social Media Icons */}
-                        <div>
+                        <div div>
                             <p className="font-medium mb-3">Follow me</p>
                             <div className="flex gap-4">
-                                <a
+                                {/* <a
                                     href="https://www.linkedin.com/in/amolkadam5256/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#CCCCD9] hover:text-white transition-all text-2xl"
+                                    className="text-[#0A66C2] hover:text-white transition-all text-2xl"
                                 >
                                     <RiLinkedinBoxFill />
                                 </a>
@@ -79,35 +79,43 @@ const ContactForm = () => {
                                     href="https://twitter.com/amolkadam1274"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#CCCCD9] hover:text-white transition-all text-2xl"
+                                    className="text-[#1DA1F2] hover:text-white transition-all text-2xl"
                                 >
                                     <RiTwitterXLine />
-                                </a>
+                                </a> */}
+
+
                                 <a
-                                    href="https://www.instagram.com/amolkadam1274/"
+                                    href="https://www.facebook.com/healurmindd"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#CCCCD9] hover:text-white transition-all text-2xl"
-                                >
-                                    <RiInstagramLine />
-                                </a>
-                                <a
-                                    href="https://wa.me/919123456789"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-[#CCCCD9] hover:text-white transition-all text-2xl"
-                                >
-                                    <RiWhatsappLine />
-                                </a>
-                                <a
-                                    href="https://www.facebook.com/amolkadam1274"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-[#CCCCD9] hover:text-white transition-all text-2xl"
+                                    className="text-[#1877F2] hover:text-white transition-all text-2xl"
                                 >
                                     <RiFacebookBoxFill />
                                 </a>
+
+                                <a
+                                    href="https://wa.me/971505761914"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#25D366] hover:text-white transition-all text-2xl"
+                                >
+                                    <RiWhatsappLine />
+                                </a>
+
+                                
+                                <a
+                                    href="https://www.instagram.com/healurmindd"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#E4405F] hover:text-white transition-all text-2xl"
+                                >
+                                    <RiInstagramLine />
+                                </a>
+
                             </div>
+
+
                         </div>
 
                     </div>

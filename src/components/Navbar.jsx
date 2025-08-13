@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import images from '../assets/Images/images';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +35,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold text-[#2F2D73] tracking-wide">
             HealurMind
+            {/* <img src={images.logo2} alt="HealurMind" className='h-18' /> */}
           </Link>
 
           {/* Desktop Nav */}

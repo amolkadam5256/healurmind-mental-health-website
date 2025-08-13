@@ -2,8 +2,9 @@ import React from 'react';
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
+  FaWhatsapp,
+  // FaLinkedinIn,
+  // FaTwitter,
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -39,8 +40,7 @@ const Footer = () => {
           <p className="text-sm text-[#CCCCD9] mt-1">
             Email:{' '}
             <a href="mailto:contact@nature.com" className="text-[#7E7CA6] hover:underline">
-              contact@nature.com
-            </a>
+              info@healurmind.com            </a>
           </p>
         </div>
 
@@ -48,10 +48,20 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
           <div className="flex space-x-4 text-xl">
-            <a href="#" className="hover:text-[#CCCCD9] transition"><FaFacebookF /></a>
-            <a href="#" className="hover:text-[#CCCCD9] transition"><FaInstagram /></a>
-            <a href="#" className="hover:text-[#CCCCD9] transition"><FaTwitter /></a>
-            <a href="#" className="hover:text-[#CCCCD9] transition"><FaLinkedinIn /></a>
+            <a href="https://www.facebook.com/healurmindd" className="hover:text-[#CCCCD9] transition"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/healurmindd" className="hover:text-[#CCCCD9] transition"><FaInstagram /></a>
+            {/* <a href="#" className="hover:text-[#CCCCD9] transition"><FaTwitter /></a> */}
+            {/* <a href="#" className="hover:text-[#CCCCD9] transition"><FaLinkedinIn /></a> */}
+
+            <a
+              href="https://wa.me/971505761914" // Replace with your WhatsApp number in international format
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#25D366] transition" // WhatsApp green hover
+            >
+              <FaWhatsapp />
+            </a>
+
           </div>
         </div>
       </div>

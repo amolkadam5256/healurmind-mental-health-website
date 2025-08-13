@@ -7,6 +7,7 @@ import bg4 from './bg4.jpg';
 
 import logo from './logo.png';
 import logo1 from './logo1.png';
+import logo2 from './logo2.jpg';
 
 import MobileView1 from './MobileView1.jpg';
 import MobileView2 from './MobileView2.png';
@@ -44,6 +45,7 @@ const images = {
   bg4,
   logo,
   logo1,
+  logo2,
   MobileView1,
   MobileView2,
   MobileView3,
