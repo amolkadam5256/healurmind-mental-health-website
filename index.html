@@ -5,6 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google Tag Manager (HEAD) -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PB84Q7MZ');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <!--  Title & Description -->
   <title>HealurMind | Online Mental Health Counseling & Therapy</title>
   <meta name="description"
@@ -20,7 +36,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/favicon.ico" />
 
-  <!--  Open Graph (Facebook, LinkedIn, etc.) -->
+  <!--  Open Graph -->
   <meta property="og:title" content="HealurMind | Online Mental Health Counseling & Therapy" />
   <meta property="og:description"
     content="Experience personalized online therapy and mental health support with HealurMind. Heal, grow, and thrive from the comfort of your home." />
@@ -42,11 +58,14 @@
   <!--  Canonical -->
   <link rel="canonical" href="https://www.healurmind.com" />
 </head>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+  var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+  (function() {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
     s1.src = 'https://embed.tawk.to/6894468c7327e01927757568/1j21j75pi';
     s1.charset = 'UTF-8';
@@ -57,8 +76,31 @@
 <!--End of Tawk.to Script-->
 
 <body>
+
+  <!-- Google Tag Manager (BODY) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB84Q7MZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Google Analytics (FOOTER) -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1F16EJ5ZG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-K1F16EJ5ZG');
+  </script>
+
+  <!-- Google Search Console Verification (FOOTER) -->
+  <meta name="google-site-verification" content="_KdwqR4jbjtMt9ZcoEocIb3hszleCUErD9TjqNowldc" />
+
 </body>
 
 </html>
